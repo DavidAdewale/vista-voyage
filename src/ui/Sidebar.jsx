@@ -2,6 +2,7 @@ import { css, styled } from 'styled-components';
 import SidebarLogo from './SidebarLogo';
 import MainNav from './MainNav';
 import { useMenuToggler } from '../context/HamburgerMenuContext';
+import Uploader from '../data/Uploader';
 
 const StyledSidebar = styled.aside`
   display: flex;
@@ -58,6 +59,7 @@ function Sidebar() {
     <StyledSidebar type={isOpen ? '' : 'hidden'}>
       <SidebarLogo />
       <MainNav />
+      <Uploader />
     </StyledSidebar>
   );
 }

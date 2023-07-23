@@ -19,6 +19,11 @@ const Main = styled.main`
 
 const AppContent = styled.div`
   padding: 2rem 4rem;
+  overflow: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 function AppLayout() {

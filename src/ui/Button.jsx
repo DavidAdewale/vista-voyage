@@ -49,8 +49,12 @@ const StyledButton = styled.button`
   }
 `;
 
-function Button({ children, disabled }) {
-  return <StyledButton disabled={disabled}>{children}</StyledButton>;
+function Button({ children, disabled, onClick }) {
+  return (
+    <StyledButton disabled={disabled} onClick={onClick}>
+      {children}
+    </StyledButton>
+  );
 }
 
 export default Button;

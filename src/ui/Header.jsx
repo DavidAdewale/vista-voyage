@@ -42,6 +42,7 @@ const StyledButton = styled.button`
 
   &:hover {
     background-color: var(--color-green-100);
+    color: var(--color-dark);
   }
 
   ${(props) =>

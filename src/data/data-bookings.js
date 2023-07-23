@@ -1,0 +1,145 @@
+import { add } from 'date-fns';
+
+function fromToday(numDDays, withTime = false) {
+  const date = add(new Date(), { days: numDDays });
+  if (!withTime) date.setUTCHours(0, 0, 0, 0);
+  return date.toISOString().slice(0, -1);
+}
+
+export const tourBookings = [
+  //KIGALI TOUR
+  {
+    created_at: fromToday(-39, true),
+    tourDate: fromToday(20),
+    endDate: fromToday(40),
+    tourId: 1,
+    guestId: 2,
+    isVip: true,
+    visaStatus: 'approved',
+    isPaid: true,
+  },
+  {
+    created_at: fromToday(-28, true),
+    tourDate: fromToday(20),
+    endDate: fromToday(40),
+    tourId: 1,
+    guestId: 3,
+    isVip: false,
+    visaStatus: 'approved',
+    isPaid: true,
+  },
+  {
+    created_at: fromToday(-28, true),
+    tourDate: fromToday(20),
+    endDate: fromToday(40),
+    tourId: 1,
+    guestId: 4,
+    isVip: false,
+    visaStatus: 'approved',
+    isPaid: true,
+  },
+  {
+    created_at: fromToday(-15, true),
+    tourDate: fromToday(20),
+    endDate: fromToday(40),
+    tourId: 1,
+    guestId: 5,
+    isVip: false,
+    visaStatus: 'approved',
+    isPaid: true,
+  },
+  //PARIS TOUR
+  {
+    created_at: fromToday(-18, true),
+    tourDate: fromToday(50),
+    endDate: fromToday(80),
+    tourId: 2,
+    guestId: 6,
+    isVip: false,
+    visaStatus: 'pending',
+    isPaid: true,
+  },
+  {
+    created_at: fromToday(-28, true),
+    tourDate: fromToday(50),
+    endDate: fromToday(80),
+    tourId: 2,
+    guestId: 7,
+    isVip: true,
+    visaStatus: 'approved',
+    isPaid: true,
+  },
+  {
+    created_at: fromToday(-10, true),
+    tourDate: fromToday(50),
+    endDate: fromToday(80),
+    tourId: 2,
+    guestId: 8,
+    isVip: true,
+    visaStatus: 'pending',
+    isPaid: true,
+  },
+  {
+    created_at: fromToday(-8, true),
+    tourDate: fromToday(50),
+    endDate: fromToday(80),
+    tourId: 2,
+    guestId: 9,
+    isVip: false,
+    visaStatus: 'pending',
+    isPaid: true,
+  },
+  //SEYCHELLES TOUR
+  {
+    created_at: fromToday(-80, true),
+    tourDate: fromToday(2),
+    endDate: fromToday(20),
+    tourId: 3,
+    guestId: 10,
+    isVip: false,
+    visaStatus: 'approved',
+    isPaid: true,
+  },
+  {
+    created_at: fromToday(-76, true),
+    tourDate: fromToday(2),
+    endDate: fromToday(20),
+    tourId: 3,
+    guestId: 11,
+    isVip: true,
+    visaStatus: 'approved',
+    isPaid: true,
+  },
+  {
+    created_at: fromToday(-56, true),
+    tourDate: fromToday(2),
+    endDate: fromToday(20),
+    tourId: 3,
+    guestId: 12,
+    isVip: true,
+    visaStatus: 'approved',
+    isPaid: true,
+  },
+  {
+    created_at: fromToday(-25, true),
+    tourDate: fromToday(2),
+    endDate: fromToday(20),
+    tourId: 3,
+    guestId: 13,
+    isVip: true,
+    visaStatus: 'approved',
+    isPaid: true,
+  },
+  {
+    created_at: fromToday(-15, true),
+    tourDate: fromToday(2),
+    endDate: fromToday(20),
+    tourId: 3,
+    guestId: 14,
+    isVip: false,
+    visaStatus: 'approved',
+    isPaid: true,
+  },
+];
+
+console.log(tourBookings.length);
