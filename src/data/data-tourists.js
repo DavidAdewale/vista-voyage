@@ -1,11 +1,11 @@
 export const tourists = [
   {
     // id: 1000,
-    fullName: 'Jonas Schmedtmann',
-    email: 'hello@jonas.io',
-    nationality: 'Portugal',
+    fullName: 'David Adewale',
+    email: 'hello@david.io',
+    nationality: 'Nigeria',
     nationalID: '3525436345',
-    countryFlag: 'https://flagcdn.com/pt.svg',
+    countryFlag: 'https://flagcdn.com/ng.svg',
   },
   {
     fullName: 'Jonathan Smith',
@@ -15,37 +15,37 @@ export const tourists = [
     countryFlag: 'https://flagcdn.com/gb.svg',
   },
   {
-    fullName: 'Jonatan Johansson',
-    email: 'jonatan@example.com',
-    nationality: 'Finland',
+    fullName: 'Maryam Agbomeji',
+    email: 'maryam@example.com',
+    nationality: 'Nigeria',
     nationalID: '9374074454',
     countryFlag: 'https://flagcdn.com/ng.svg',
   },
   {
-    fullName: 'Jonas Mueller',
-    email: 'jonas@example.eu',
+    fullName: 'Martha Mueller',
+    email: 'martha@example.eu',
     nationality: 'Germany',
     nationalID: '1233212288',
     countryFlag: 'https://flagcdn.com/de.svg',
   },
   {
-    fullName: 'Jonas Anderson',
+    fullName: 'Helge Anderson',
     email: 'anderson@example.com',
     nationality: 'Bolivia (Plurinational State of)',
     nationalID: '0988520146',
     countryFlag: 'https://flagcdn.com/bo.svg',
   },
   {
-    fullName: 'Jonathan Williams',
-    email: 'jowi@gmail.com',
-    nationality: 'United States of America',
+    fullName: 'Chidi Ojolum',
+    email: 'chidoski@gmail.com',
+    nationality: 'Nigeria',
     nationalID: '633678543',
-    countryFlag: 'https://flagcdn.com/us.svg',
+    countryFlag: 'https://flagcdn.com/ng.svg',
   },
 
   // GPT
   {
-    fullName: 'Emma Watson',
+    fullName: 'Emma Daavis',
     email: 'emma@gmail.com',
     nationality: 'United Kingdom',
     nationalID: '1234578901',
@@ -95,4 +95,4 @@ export const tourists = [
   },
 ];
 
-console.log(tourists.length);
+// console.log(tourists.length);

@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from 'react';
+import { createContext, useCallback, useContext, useState } from 'react';
 
 const HamburgerContext = createContext();
 
@@ -9,8 +9,12 @@ function HamburgerToggler({ children }) {
     setIsOpen((open) => !open);
   }
 
+  const closeMenu = useCallback(() => {
+    if (isOpen === true) setIsOpen(false);
+  }, [isOpen]);
+
   return (
-    <HamburgerContext.Provider value={{ isOpen, toggleMenu }}>
+    <HamburgerContext.Provider value={{ isOpen, toggleMenu, closeMenu }}>
       {children}
     </HamburgerContext.Provider>
   );

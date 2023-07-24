@@ -24,6 +24,10 @@ const AppContent = styled.div`
   &::-webkit-scrollbar {
     display: none;
   }
+
+  @media only screen and (max-width: 56.25em) {
+    padding: 2rem 2rem;
+  }
 `;
 
 function AppLayout() {

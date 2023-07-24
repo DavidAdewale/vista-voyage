@@ -9,6 +9,7 @@ const GlobalStyles = createGlobalStyle`
     --color-blue-300: #809bc7;
     --color-regular: #99e0ff;
     --color-blue-500: #3e4b60;
+    --transition-3s: all 0.3s;
     --border-radius-lg: 1rem;
     --border-radius-sm: .5rem;
     --box-shadow: 2px 4px 23px 0px rgba(0, 0, 0, 0.05);

@@ -3,6 +3,7 @@ import SidebarLogo from './SidebarLogo';
 import MainNav from './MainNav';
 import { useMenuToggler } from '../context/HamburgerMenuContext';
 import Uploader from '../data/Uploader';
+import { useOutsideClicks } from '../hooks/useOutsideClicks';
 
 const StyledSidebar = styled.aside`
   display: flex;
@@ -53,10 +54,11 @@ const StyledSidebar = styled.aside`
 `;
 
 function Sidebar() {
-  const { isOpen } = useMenuToggler();
+  const { isOpen, closeMenu } = useMenuToggler();
+  const ref = useOutsideClicks(closeMenu);
 
   return (
-    <StyledSidebar type={isOpen ? '' : 'hidden'}>
+    <StyledSidebar type={isOpen ? '' : 'hidden'} ref={ref}>
       <SidebarLogo />
       <MainNav />
       <Uploader />

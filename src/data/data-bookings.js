@@ -142,4 +142,4 @@ export const tourBookings = [
   },
 ];
 
-console.log(tourBookings.length);
+// console.log(tourBookings.length);
